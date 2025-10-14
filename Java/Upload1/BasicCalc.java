@@ -16,7 +16,7 @@ public class BasicCalc{
     if ((a + b) == (int) (a + b)){ //Checks if it's an int value
   System.out.printf("Your number is: %02d%n", (int) (a + b)); //if its int it prints out as a 2 number. ex 01,21
 }  else {
-  System.out.printf("Your number is: %.4f%n",  (a + b)); //if its float it sums up to the nearest 4 number after the dot
+  System.out.printf("Your number is: %.4f%n",  (a +b)); //if its float it sums up to the nearest 4 number after the dot
  }
 }
 
