@@ -1,3 +1,5 @@
+package Java.Upload2;
+
 import java.util.Scanner;
 import java.util.Random;
 

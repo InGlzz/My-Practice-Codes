@@ -1,3 +1,5 @@
+package Java.Upload2;
+
 import java.util.Random;
 public class star1 {
  public static void main(String[] args){
