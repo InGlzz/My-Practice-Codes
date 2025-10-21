@@ -6,24 +6,24 @@ public class UserPassTest {
     public static boolean validateUsername (Scanner scn, String[] usernames) {
         int attemptCount = 0;
         boolean truthOfTheName = false;
-        String userName = "-1";
+        String userNameGiven = "-1";
              //Check for the username
             do  {
                 //get the username
                 System.out.println("Enter Your Username (Type exit to quit): ");
-                userName = scn.nextLine(); //it gets the username from the user.
+                userNameGiven = scn.nextLine(); //it gets the username from the user.
                 //exit if its exit.
-                if (userName.equalsIgnoreCase("exit")) {
+                if (userNameGiven.equalsIgnoreCase("exit")) {
                     System.exit(0);
                 }
 
-                for (int i = 0; i < usernames.length; i++) {
-                 if (userName.equals(usernames[i])) {
+                for (String i : usernames) {
+                 if (userNameGiven.equals(i)) {
                      truthOfTheName = true;
                      break;
                    }
                  } if (!truthOfTheName ) {
-                    System.out.println("Invalid Username. Attempts left: " + (3 - attemptCount));
+                    System.out.println("Invalid Username. Attempts left: " + (2 - attemptCount));
                 }
                 attemptCount++;
             } while ( attemptCount < 3 && !truthOfTheName );
