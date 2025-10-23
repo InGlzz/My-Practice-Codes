@@ -13,7 +13,7 @@ System.out.println(line);
 
 for (int i = 0 ; i < line ; i++){
 star = 0;
-  for (int k = 0; k<1; ) {
+  for (int k = 0; k < 1; ) {
     if (star < i) {
      System.out.print("* ");
       star++;
@@ -21,7 +21,7 @@ star = 0;
  break;
         }
   }
-System.out.println("");
+System.out.println();
 }
 
  }
