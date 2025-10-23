@@ -1,3 +1,5 @@
+package LabCodes.lab3;
+
 import java.util.Scanner;
 
 public class Fifth {
